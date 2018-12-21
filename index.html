@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Destination Station</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <!-- moment -->
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js></script>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+
+<body id="body">
+    <div id="container" class="container text-center">
+        <div class="jumbotron" id="jumbo1">
+            <h1 class="text-center"><b>Destination Station</b></h1>
+            <br>
+            <h4><i>Choose your destination</i></h4>
+        </div>
+    </div>
+    <form>
+        <div id="container" class="container">
+            <div class="card-header text-center" id="cardHeader1">
+                <div><b>Your Destination Schedule</b></div>
+            </div>
+            <div class="card">
+                <div class="form-group">
+                    <table class="table" id='train-table'>
+                        <thead>
+                            <tr>
+                                <th><i>Train Name</i></th>
+                                <th><i>Destination</i></th>
+                                <th><i>Frequency(min)</i></th>
+                                <th><i>Next Arrival</i></th>
+                                <th><i>Minutes Away</i></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div>
+                <div class="card-header text-center" id="cardHeader2">
+                    <div><b>Add Train</b></div>
+                </div>
+            </div>
+            <div class="card" align-center>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1"><b>Train Name</B></label>
+                    <input type="name" class="form-control" id="trainNameInput" placeholder="West Coast Chu Chu">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1"><b>Destination</b></label>
+                    <input type="name" class="form-control" id="destinationInput" placeholder="Happiest Place On Earth">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1"><b>First Train (HH:mm - military time)</b></label>
+                    <input type="name" class="form-control" id="firstTrainTimeInput" placeholder="02:00/15:00">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1"><b>Frequency(min)</b></label>
+                    <input type="name" class="form-control" id="frequencyInput" placeholder="15">
+                </div>
+    </form>
+    <!-- submit button -->
+    <div class="container">
+        <div>
+            <input class="btn btn-primary" type="submit" id="submitTrain" value="Submit">
+        </div>
+    </div>
+</body>
+<!-- javascript -->
+<script src="assets/javascript/main.js"></script>
+
+
+</html>

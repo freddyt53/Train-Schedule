@@ -1,0 +1,36 @@
+#body{
+    background-image: url(https://i.pinimg.com/originals/7f/27/0a/7f270ad560ff36e2506f9bac59bac702.jpg);
+    background-size: cover;
+}
+
+#container{
+    opacity: .80;
+    color: rgb(253, 191, 76);
+    
+}
+
+#jumbo1{
+    background-image: url(https://1001freedownloads.s3.amazonaws.com/vector/thumb/81653/Dutch_train.png);
+    background-position: 1vh;
+    background-repeat: no-repeat;
+    background-size: auto;
+    color: rgb(138, 138, 138);
+}
+
+#cardHeader1{
+    background-color: rgb(36, 36, 196);
+    margin-top: 20px;
+}
+
+#cardHeader2{
+    background-color: rgb(36, 36, 196);
+}
+
+
+#submitTrain{
+    background-color: rgb(36, 36, 196);
+    color:rgb(253, 191, 76);
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
