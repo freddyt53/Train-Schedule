@@ -73,7 +73,7 @@ trainData.ref().on("child_added", function (childSnapshot) {
 
 
 
-  //calls the correct rows to display info in correct 
+  //calls the correct rows to display info in 
   var newRow = $("<tr>").append(
     $("<td>").text(tName),
     $("<td>").text(dest),
